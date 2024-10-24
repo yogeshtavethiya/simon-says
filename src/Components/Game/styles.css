@@ -33,3 +33,6 @@
 .bg-blue{
     background: cadetblue;
 }
+.active{
+    cursor: pointer;
+}
