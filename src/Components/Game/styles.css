@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.game-box{
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid black;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.start-btn{
+    margin: 10px;
+    width: 50%;
+    padding: 10px;
+    background-color: seashell;
+    border: 1px solid blanchedalmond;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
