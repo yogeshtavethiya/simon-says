@@ -29,3 +29,7 @@
     cursor: pointer;
     font-weight: 700;
 }
+
+.bg-blue{
+    background: cadetblue;
+}
