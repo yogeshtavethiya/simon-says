@@ -21,10 +21,6 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-
-    &:hover{
-        background: sandybrown;
-    }
 }
 
 .start-btn{
@@ -50,4 +46,7 @@
   }
 .active{
     cursor: pointer;
+    &:hover{
+        background: sandybrown;
+    }
 }

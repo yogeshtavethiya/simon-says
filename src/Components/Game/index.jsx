@@ -35,22 +35,25 @@ const Game = () => {
             if (nextIndex + 1 === computerSequence.length) {
                 setRound((prevRound) => prevRound + 1);
                 setPlayerSequence([]);
+                setStartClicked(false)
                 console.log("Correct! Next.");
             }
         } else {
             console.log("Incorrect.");
             setPlayerSequence([]);
+            setComputerSequence([])
+            setRound(1)
         }
     };
 
     return (
         <div className="container">
-            <div className={`game-container ${startClicked ? 'active' : ''}`}>
+            <div className={`game-container`}>
                 {[...Array(9)].map((_, idx) => (
                     <div
                         onClick={() => playGame(idx + 1)}
                         key={idx}
-                        className={`game-box ${highlight && randomItem === idx + 1 ? 'bg-blue' : ''}`}
+                        className={`game-box  ${startClicked ? 'active' : ''} ${highlight && randomItem === idx + 1 ? 'bg-blue' : ''}`}
                     >
                         {idx + 1}
                     </div>
