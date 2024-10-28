@@ -7,7 +7,7 @@ const Game = () => {
     const [startClicked, setStartClicked] = useState(false);
     const [round, setRound] = useState(1);
     const [playerSequence, setPlayerSequence] = useState([]);
-    const [computerSequence, setComputerSequence] = useState([]);
+    const [computerSequence, setComputerSequence] = useState([])
 
     const randomGenerator = () => {
         const newSequence = Array.from({ length: round }, () => Math.floor(Math.random() * 9 + 1));

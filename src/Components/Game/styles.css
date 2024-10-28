@@ -17,6 +17,14 @@
     border-radius: 5px;
     background-color: whitesmoke;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+    &:hover{
+        background: sandybrown;
+    }
 }
 
 .start-btn{
@@ -35,9 +43,11 @@
 }
 .bg-green {
     background-color: green;
-    transition: opacity .5s ease-out;
+    animation: mymove 0.5s ease-out;
 }
-
+@keyframes mymove {
+    50% {opacity: 0.5;}
+  }
 .active{
     cursor: pointer;
 }
